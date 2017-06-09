@@ -4,7 +4,7 @@ LABEL maintainer "j"
 ENV DEBIAN_FRONTEND noninteractive
 
 # Eclipse package-drone signature
-RUN add-apt-key -k keyserver.ubuntu.com 320E6224
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 320E6224
 RUN add-apt-repository "deb http://download.eclipse.org/package-drone/release/current/ubuntu package-drone default"
 
 #    && apt-get install -y --force-yes --no-install-recommends \
