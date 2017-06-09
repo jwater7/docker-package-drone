@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Eclipse package-drone signature
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 320E6224
-RUN add-apt-repository "deb http://download.eclipse.org/package-drone/release/current/ubuntu package-drone default"
+RUN echo 'deb http://download.eclipse.org/package-drone/release/current/ubuntu package-drone default' > /etc/apt/sources.list.d/eclipse-package-drone.list
 
 #    && apt-get install -y --force-yes --no-install-recommends \
 #        openjdk-8-jre-headless \
