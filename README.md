@@ -1,5 +1,7 @@
 # docker-package-drone
 
+# CURRENTLY UNDER DEVELOPEMENT - NOT WORKING/STARTING (know how to fix?)
+
 ## Quick start (run with postgres)
 
 ~~~
